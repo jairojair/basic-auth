@@ -3,7 +3,7 @@
 [![Build Status](https://drone.io/github.com/jairojair/basic-auth/status.png)](https://drone.io/github.com/jairojair/basic-auth/latest)
 
 
-Generic basic Authorization based on header field, according RFC 2617.
+Generic basic Authorization based on header field, according [RFC 2617](https://www.ietf.org/rfc/rfc2617.txt).
 
 
 #### Installation
