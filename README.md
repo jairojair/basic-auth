@@ -12,12 +12,6 @@ Generic basic Authorization based on header field, according RFC 2617.
 luarocks install basic-auth
 ```
 
-###  Tests
-
-```
- busted
-```
-
 ### Contributing
 
 - fork 
@@ -28,6 +22,11 @@ luarocks install basic-auth
 
 See the issues [here](https://github.com/jairojair/basic-auth/issues)
 
+###  Tests
+
+```
+ busted
+```
 
 ### About
 
