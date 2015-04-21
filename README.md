@@ -30,7 +30,7 @@ See the issues [here](https://github.com/jairojair/basic-auth/issues)
 
 #### About
 
-Inspired by [jshttp](https://github.com/jshttp/basic-auth)
+Inspired by [jshttp](https://github.com/jshttp/basic-auth) and [wsapi_basic_auth](https://github.com/keplerproject/wsapi_basic_auth)
 
 #### License
 
