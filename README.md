@@ -32,7 +32,7 @@ server:start(function (req, rep)
     	--[[ 
 
     	Use credentials from database, file, memory, whatever.
-    	This example used vars :)
+    	This example was used vars :)
     
     	--]] 
 
