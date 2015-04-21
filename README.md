@@ -6,7 +6,7 @@
 Generic basic Authorization based on header field, according RFC 2617.
 
 
-### Installation
+#### Installation
 
 ```
 luarocks install basic-auth
@@ -18,20 +18,20 @@ luarocks install basic-auth
 - add your contribution *Thank's a lot !* 
 - send pull request
 
-### Issues
+#### Issues
 
 See the issues [here](https://github.com/jairojair/basic-auth/issues)
 
-###  Tests
+####  Tests
 
 ```
  busted
 ```
 
-### About
+#### About
 
 Inspired by [jshttp](https://github.com/jshttp/basic-auth)
 
-### License
+#### License
 
 [MIT](LICENSE)
