@@ -4,8 +4,8 @@ function auth(request)
 		local auth = request.headers.Authorization
 
 		if auth then
-			local user, pass = get_credentials(auth)
-			return { user = user, pass = pass }
+			local username, password = get_credentials(auth)
+			return { name = username, pass = password }
 		end
 	end
 end
