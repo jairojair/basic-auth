@@ -12,6 +12,46 @@ Generic basic Authorization based on header field, according [RFC 2617](https://
 luarocks install basic-auth
 ```
 
+### How to works ?
+
+See a example below using [Pegasus.lua](https://github.com/EvandroLG/pegasus.lua)
+
+```lua
+
+local auth      = require 'basic-auth'
+local pegasus   = require 'pegasus'
+
+local server = pegasus:new('9090')
+
+server:start(function (req, rep)
+
+    local user = auth(req)
+
+    if user then
+
+    	--[[ 
+
+    	Use credentials from database, file, memory, whatever.
+    	This example used vars :)
+    
+    	--]] 
+
+    	local fakeUserName = 'admin'
+    	local fakePassWord = 'admin'
+
+    	if user.name == fakeUserName and user.pass == fakePassWord then
+    		rep.writeHead(200).finish('Welcome')
+    	else
+    		rep.writeHead(403).finish('Invalid credentials')
+    	end
+    else
+    	rep.writeHead(401).finish('Invalid request, send me a valid header please!')
+	end
+end)
+
+
+```
+
 ### Contributing
 
 - fork 
