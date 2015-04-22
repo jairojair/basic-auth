@@ -41,7 +41,7 @@ describe("auth(request)", function()
 			expected_user = 'admin'
 			expected_pass = 'admin'
 
-			assert.are.same(expected_user, credentials.user)
+			assert.are.same(expected_user, credentials.name)
 			assert.are.same(expected_pass, credentials.pass)
 
 		end)

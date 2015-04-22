@@ -14,9 +14,7 @@ function get_credentials(header)
 
 	local b64 = require "base64"
 
-	local credentials = header:match(".%w+%s(%w+.)")
-
-	local credentials_decoded = b64.decode(credentials)
+	local credentials_decoded = b64.decode(header:match(".%w+%s(%w+.)"))
 
 	return credentials_decoded:match("(.*):(.*)")
 
