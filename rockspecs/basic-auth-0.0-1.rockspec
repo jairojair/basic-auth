@@ -8,7 +8,7 @@ source = {
 
 description = {
   summary = 'Basic Authentication written in Lua.',
-  homepage = 'https://github.com/jairojair/basic-auth.lua',
+  homepage = 'https://github.com/jairojair/basic-auth',
   maintainer = 'Jairo Jair (@jairojair) <jairojair@gmail.com>',
   license = 'MIT'
 }
