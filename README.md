@@ -8,6 +8,8 @@ Generic basic Authorization based on header field, according [RFC 2617](https://
 
 #### Installation
 
+teste
+
 ```
 luarocks install basic-auth
 ```
