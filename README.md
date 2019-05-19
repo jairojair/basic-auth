@@ -40,12 +40,13 @@ server:start(function (req, rep)
     	local fakePassWord = 'admin'
 
     	if user.name == fakeUserName and user.pass == fakePassWord then
-    		rep.writeHead(200).finish('Welcome')
+    		rep:statusCode(200):write('Welcome')
     	else
-    		rep.writeHead(403).finish('Invalid credentials')
+    		rep:statusCode(403):write('Invalid credentials')
     	end
     else
-    	rep.writeHead(401).finish('Invalid request, send me a valid header please!')
+    	rep:addHeader('WWW-Authenticate', 'Basic realm="Restricted"')
+	rep:statusCode(401, 'Unauthorized'):write('Authentication required!')
 	end
 end)
 

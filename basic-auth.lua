@@ -1,7 +1,7 @@
 function auth(request)
 
 	if is_table(request) then
-		local auth = request.headers.Authorization
+		local auth = request:headers().Authorization
 
 		if auth then
 			local username, password = get_credentials(auth)
